@@ -5,13 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Function</title>
 </head>
+<style>
+    #one{
+        border: 2px solid red;
+        height: 200px;
+        width: 200px;
+        background-color: brown;
+    }
+</style>
 <body>
+    <div id="one">
+       <button onclick="abes()">click Here</button>
+    </div>
     <script>
-        function abes()
-        {
-            document.write("Hello")
+        // function abes()
+        // {
+        //     document.write("Hello")
+        // }
+        function abes(){
+            document.getElementById('one').innerHTML="<h1>Hello</h1>"
         }
-        abes();
     </script>
 </body>
 </html>
