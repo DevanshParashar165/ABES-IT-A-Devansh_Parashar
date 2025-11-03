@@ -2,6 +2,7 @@ import './App.css'
 import Card from './Component/Card'
 import Navbar from './Component/Navbar'
 import ChangeState from './Component/ChangeState'
+import ButtonColor from './Component/ButtonColor'
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
         <Card name={"Burger"} rate={50} image={"https://static.vecteezy.com/system/resources/previews/022/911/694/non_2x/cute-cartoon-burger-icon-free-png.png"}/>
       </div>
       <ChangeState/>
+      <ButtonColor/>
     </>
   )
 }
