@@ -13,6 +13,7 @@ function App() {
       <Book img="https://booksandyou.in/cdn/shop/files/PhysicsPartITextbookforClassXII_1.webp?v=1713763686" title="Physics" price="300"/>
       <Book img="https://www.tppl.org.in/2020/15522-large_default/chemistry-i-major-book-bsc-first-sem-kukcrs-university.jpg" title="Chemistry" price="200"/>
     </div>
+    
   )
 }
 
