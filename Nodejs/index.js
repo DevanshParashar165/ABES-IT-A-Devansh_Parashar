@@ -57,8 +57,12 @@ import fs from "fs"
 
 // fs.cpSync("a1.txt","b1.txt")
 
-fs.cp('a1.txt','b1.txt',(err)=>{
-    if(err){
-        console.log(err)
-    }
-})
+// fs.cp('a1.txt','b1.txt',(err)=>{
+//     if(err){
+//         console.log(err)
+//     }
+// })
+
+// fs.unlinkSync('./a1.txt')
+
+fs.writeFile("a1.txt","This is content of a1",()=>{});
