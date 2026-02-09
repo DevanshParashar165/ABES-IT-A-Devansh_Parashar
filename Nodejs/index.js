@@ -34,4 +34,31 @@ import fs from "fs"
 // const content = fs.readFileSync('abes.txt','utf-8');
 // console.log(content)
 
-fs.writeFile("new.txt","This is new file",()=>{});
+// fs.writeFile("new.txt","This is new file",()=>{});
+
+// fs.readFile('./new.txt','utf-8',(err,result)=>{
+//     if(err){
+//         console.log(err)
+//     }
+//     else{
+//         console.log(result)
+//     }
+// })
+
+// fs.appendFileSync("./new.txt",' This is the appended line')
+
+// fs.appendFile('./new.txt'," \nThis is appended data with normal callback",()=>{})
+
+// fs.appendFile('./new.txt'," \nThis is appended data with if else callback",(err)=>{
+//     if(err){
+//         console.log("Error : ",err)
+//     }
+// })
+
+// fs.cpSync("a1.txt","b1.txt")
+
+fs.cp('a1.txt','b1.txt',(err)=>{
+    if(err){
+        console.log(err)
+    }
+})
