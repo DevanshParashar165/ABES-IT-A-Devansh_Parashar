@@ -1,5 +1,7 @@
 import http from "http"
 import fs from "fs"
+import { Readable } from "stream";
+import { json } from "stream/consumers";
 
 // const app = http.createServer((req,res)=>{
 //     // console.log('Server started.....')
@@ -65,4 +67,43 @@ import fs from "fs"
 
 // fs.unlinkSync('./a1.txt')
 
-fs.writeFile("a1.txt","This is content of a1",()=>{});
+// fs.writeFile("a1.txt","This is content of a1",()=>{});
+
+// const filesToDelete = [
+//     'a1.txt',
+//     'b1.txt',
+//     'text.txt'
+// ]
+
+// try {
+//     await Promise.all(
+//         filesToDelete.map(file=>
+//             fs.unlink(file).catch(err => {
+//                 if(err.code !== 'ENOENT'){
+//                     console.error(`Error deleting ${file} : `,err)
+//                 }
+//             })
+//         )
+//     );
+//     console.log('Files deleted successfully');
+// } catch (error) {
+//     console.error('Error during file deletion :', error);
+// }
+
+// const users = JSON.parse(
+//     fs.readFileSync("./users.json","utf-8")
+// )
+
+// let user = {
+//     name: "New User",
+//     age: 30,
+//     language: ["PHP", "Go", "JavaScript"]
+// };
+
+// users.push(user)
+
+// fs.writeFile('users.json',JSON.stringify(users),(err)=>{
+//     if(err) throw err ;
+//     console.log('Done writing')
+// })
+

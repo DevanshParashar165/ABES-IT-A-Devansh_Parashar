@@ -6,7 +6,9 @@ import path from "path";
 const app = express();
 const PORT = 5000;
 
-app.use(cors());
+app.use(cors({
+    origin : '*'
+}));
 app.use(express.json());
 
 const dataDir = path.join(process.cwd(), "data");
@@ -24,6 +26,7 @@ app.post("/write", (req, res) => {
   if (!content) {
     return res.status(400).json({ message: "Content is required" });
   }
+  console.log(content)
 
   fs.writeFile(filePath, content, "utf8", (err) => {
     if (err) {
