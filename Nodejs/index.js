@@ -107,3 +107,13 @@ import { json } from "stream/consumers";
 //     console.log('Done writing')
 // })
 
+import os from 'os'
+
+console.log("Platform : ",os.platform())
+console.log("CPU Architecture : ",os.arch())
+console.log("User Info : ",os.userInfo())
+console.log("Total Memory : ",os.totalmem())
+console.log("Free Memory : ",os.freemem())
+console.log("Uptime : ",os.uptime())
+console.log("Home dir : ",os.homedir())
+console.log("Host Name : ",os.hostname())

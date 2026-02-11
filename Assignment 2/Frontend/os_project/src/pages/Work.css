@@ -1,0 +1,58 @@
+/* PAGE */
+.work {
+  min-height: 100vh;
+  background: #f1f5f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  font-family: Arial, sans-serif;
+}
+
+/* TITLE */
+.work-title {
+  font-size: 34px;
+  margin-bottom: 25px;
+  color: #0f172a;
+}
+
+/* CARD */
+.work-card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  width: 420px;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+/* IMAGE */
+.work-img {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+/* BUTTON GROUP */
+.btn-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
+/* BUTTON STYLE */
+.btn-group button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  background: #0f172a;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 14px;
+}
+
+.btn-group button:hover {
+  background: #38bdf8;
+  transform: translateY(-2px);
+}
