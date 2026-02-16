@@ -109,11 +109,22 @@ import { json } from "stream/consumers";
 
 import os from 'os'
 
-console.log("Platform : ",os.platform())
-console.log("CPU Architecture : ",os.arch())
-console.log("User Info : ",os.userInfo())
-console.log("Total Memory : ",os.totalmem())
-console.log("Free Memory : ",os.freemem())
-console.log("Uptime : ",os.uptime())
-console.log("Home dir : ",os.homedir())
-console.log("Host Name : ",os.hostname())
+// console.log("Platform : ",os.platform())
+// console.log("CPU Architecture : ",os.arch())
+// console.log("User Info : ",os.userInfo())
+// console.log("Total Memory : ",os.totalmem())
+// console.log("Free Memory : ",os.freemem())
+// console.log("Uptime : ",os.uptime())
+// console.log("Home dir : ",os.homedir())
+// console.log("Host Name : ",os.hostname())
+
+const home = fs.readFileSync('abes.html')
+const myServer = http.createServer((req,res)=>{
+    // console.log('Server1');
+    // res.end("Hi this is my server")
+    res.statusCode = 200
+    // res.setHeader('content-type','text/plain')
+    res.end(home)
+})
+
+myServer.listen(5000,()=>console.log('Server is running'))
