@@ -18,12 +18,29 @@ app.use("/img", express.static("uploads"));
 //   });
 // });
 
+const port = 8000
 
+const student = [{
+    id : 1,
+    name : 'abc',
+    class : 'B.tech'
+}]
 
-app.listen(5000,(err)=>{
+//route
+
+app.get('/',(req,res)=>{
+    try {
+        return res.status(200)
+                  .json(student)
+    } catch (error) {
+        console.log(error.message)
+    }
+})
+
+app.listen(8000,(err)=>{
     if(err){
         console.log('Error : ',err.message)
     }else{
-        console.log(`Server is listening on port http://localhost:5000`)
+        console.log(`Server is listening on port http://localhost:${port}`)
     }
 })
